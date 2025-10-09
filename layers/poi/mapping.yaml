@@ -51,6 +51,7 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - prison
   - pub
   - public_building
+  - ranger_station
   - recycling
   - restaurant
   - school
@@ -83,6 +84,7 @@ def_poi_mapping_building: &poi_mapping_building
 # highway values , see http://taginfo.openstreetmap.org/keys/highway#values
 def_poi_mapping_highway: &poi_mapping_highway
   - bus_stop
+  - trailhead
 
 # historic values , see http://taginfo.openstreetmap.org/keys/historic#values
 def_poi_mapping_historic: &poi_mapping_historic
@@ -102,6 +104,7 @@ def_poi_mapping_landuse: &poi_mapping_landuse
 def_poi_mapping_leisure: &poi_mapping_leisure
   - dog_park
   - escape_game
+  - fishing
   - garden
   - golf_course
   - ice_rink
@@ -360,11 +363,13 @@ def_poi_mapping_sport: &poi_mapping_sport
 # tourism values , see http://taginfo.openstreetmap.org/keys/tourism#values
 def_poi_mapping_tourism: &poi_mapping_tourism
   - alpine_hut
+  - wilderness_hut
   - aquarium
   - artwork
   - attraction
   - bed_and_breakfast
   - camp_site
+  - camp_pitch
   - caravan_site
   - chalet
   - gallery
@@ -382,6 +387,14 @@ def_poi_mapping_tourism: &poi_mapping_tourism
 # waterway values , see http://taginfo.openstreetmap.org/keys/waterway#values
 def_poi_mapping_waterway: &poi_mapping_waterway
   - dock
+  - waterfall
+
+def_poi_mapping_natural: &poi_mapping_natural
+  - spring
+  - valley
+  - cave_entrance
+  - hot_spring
+  - geyser
 
 def_poi_fields: &poi_fields
   - name: osm_id
@@ -444,6 +457,15 @@ def_poi_fields: &poi_fields
   - name: brand
     key: brand
     type: string
+  - name: man_made
+    key: man_made
+    type: string
+  - name: tower_type
+    key: tower:type
+    type: string
+  - name: natural
+    key: natural
+    type: string
 
 def_poi_mapping: &poi_mapping
   aerialway: *poi_mapping_aerialway
@@ -460,6 +482,11 @@ def_poi_mapping: &poi_mapping
   sport: *poi_mapping_sport
   tourism: *poi_mapping_tourism
   waterway: *poi_mapping_waterway
+  natural: *poi_mapping_natural
+  man_made:
+    - lighthouse
+  'tower:type':
+    - observation
 
 tables:
   # etldoc: imposm3 -> osm_poi_point

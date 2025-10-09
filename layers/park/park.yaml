@@ -21,6 +21,8 @@ layer:
     name_en: English name `name:en` if available, otherwise `name` (point features only). This is deprecated and will be removed in a future release in favor of `name:en`.
     name_de: German name `name:de` if available, otherwise `name` or `name:en` (point features only). This is deprecated and will be removed in a future release in favor of `name:de`.
     rank: Rank of the park within one tile, starting at 1 that is the most important park (point features only).
+    maritime: The OSM [`maritime`](http://wiki.openstreetmap.org/wiki/Key:maritime) value of the park.
+    protect_class: The OSM [`protect_class`](http://wiki.openstreetmap.org/wiki/Key:protect_class) value of the park.
   datasource:
     geometry_field: geometry
     query: (SELECT geometry, class, name, name_en, name_de, {name_languages}, rank FROM layer_park(!bbox!, z(!scale_denominator!), !pixel_width!)) AS t

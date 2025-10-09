@@ -95,6 +95,12 @@ tables:
       type: string
     - name: area
       type: area
+    - name: maritime
+      key: maritime
+      type: string
+    - name: protect_class
+      key: protect_class
+      type: string
     mapping:
       leisure:
       - nature_reserve

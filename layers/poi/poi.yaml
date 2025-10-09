@@ -58,6 +58,8 @@ layer:
           subclass: ['subway_entrance', 'train_station_entrance']
         campsite:
           subclass: ['camp_site', 'caravan_site']
+        camp_pitch:
+          subclass: ['camp_pitch']
         laundry:
           subclass: ['laundry', 'dry_cleaning']
         grocery:
@@ -67,7 +69,7 @@ layer:
         college:
           subclass: ['university', 'college']
         lodging:
-          subclass: ['hotel', 'motel', 'bed_and_breakfast', 'guest_house', 'hostel', 'chalet', 'alpine_hut', 'dormitory']
+          subclass: ['hotel', 'motel', 'bed_and_breakfast', 'guest_house', 'hostel', 'chalet', 'alpine_hut', 'dormitory', 'wilderness_hut']
         ice_cream:
           subclass: ['ice_cream']
         post:
@@ -108,6 +110,8 @@ layer:
           subclass: ['atm']
         fuel:
           subclass: ['fuel', 'charging_station']
+        natural:
+          subclass: ['spring', 'valley', 'cave_entrance', 'hot_spring', 'geyser']
     subclass:
       description: |
           Original value of either the

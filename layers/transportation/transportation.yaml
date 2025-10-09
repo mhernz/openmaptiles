@@ -160,11 +160,10 @@ layer:
       - parking_aisle
     access:
       description: |
-          Access restrictions on this road.  Supported values of the
-          [`access`](http://wiki.openstreetmap.org/wiki/Key:access) tag are `no` and `private`,
-          which resolve to `no`.
-      values:
-      - no
+          Original value of the [`access`](http://wiki.openstreetmap.org/wiki/Key:access) tag.
+    informal:
+      description: |
+          Original value of the [`informal`](http://wiki.openstreetmap.org/wiki/Key:informal) tag.
     toll:
       description: |
           Whether this is a toll road, based on the [`toll`](http://wiki.openstreetmap.org/wiki/Key:toll) tag.
@@ -198,6 +197,9 @@ layer:
     mtb_scale:
       description: |
           Original value of the [`mtb:scale`](http://wiki.openstreetmap.org/wiki/Key:mtb:scale) tag (highways only).
+    sac_scale:
+      description: |
+          Original value of the [`sac:scale`](http://wiki.openstreetmap.org/wiki/Key:sac:scale) tag (highways only).
     official:
       description: |
           Whether or not a path or trail is official according to the land manager.
