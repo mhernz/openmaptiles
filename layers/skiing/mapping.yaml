@@ -1,0 +1,76 @@
+name_field: &name
+  name: name
+  key: name
+  type: string
+name_en_field: &name_en
+  name: name_en
+  key: name:en
+  type: string
+name_de_field: &name_de
+  name: name_de
+  key: name:de
+  type: string
+piste_type_field: &piste_type
+  name: piste_type
+  key: piste:type
+  type: string
+piste_difficulty_field: &piste_difficulty
+  name: piste_difficulty
+  key: piste:difficulty
+  type: string
+piste_grooming_field: &piste_grooming
+  name: piste_grooming
+  key: piste:grooming
+  type: string
+piste_name_field: &piste_name
+  name: piste_name
+  key: piste:name
+  type: string
+man_made_field: &man_made
+  name: man_made
+  key: man_made
+  type: string
+
+tables:
+  piste_linestring:
+    type: linestring
+    _resolve_wikidata: false
+    columns:
+    - *name
+    - *name_en
+    - *name_de
+    - *piste_type
+    - *piste_difficulty
+    - *piste_grooming
+    - *piste_name
+    - *man_made
+    mapping:
+      "piste:type":
+      - downhill
+      - nordic
+      - skitour
+      - ski_jump
+      - fatbike
+      man_made:
+      - piste:halfpipe
+  piste_polygon:
+    type: polygon
+    _resolve_wikidata: false
+    columns:
+    - *name
+    - *name_en
+    - *name_de
+    - *piste_type
+    - *piste_difficulty
+    - *piste_grooming
+    - *piste_name
+    - *man_made
+    mapping:
+      "piste:type":
+      - downhill
+      - nordic
+      - skitour
+      - ski_jump
+      - fatbike
+      man_made:
+      - piste:halfpipe

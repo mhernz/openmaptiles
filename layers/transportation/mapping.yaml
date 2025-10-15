@@ -376,6 +376,7 @@ tables:
       - cable_car
       - j-bar
       - mixed_lift
+      - magic_carpet
 
 # etldoc: imposm3 -> osm_shipway_linestring
   shipway_linestring:

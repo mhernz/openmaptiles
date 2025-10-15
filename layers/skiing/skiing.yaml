@@ -1,0 +1,22 @@
+layer:
+  id: "skiing"
+  description: |
+    **skiing** contains skiing features.
+  buffer_size: 4
+  srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  fields:
+    name: The OSM [`name`](http://wiki.openstreetmap.org/wiki/Key:name) value of the skiing feature.
+    name_en: English name `name:en` if available, otherwise `name`. This is deprecated and will be removed in a future release in favor of `name:en`.
+    name_de: German name `name:de` if available, otherwise `name` or `name:en`. This is deprecated and will be removed in a future release in favor of `name:de`.
+    piste_type: The OSM [`piste:type`](http://wiki.openstreetmap.org/wiki/Key:piste:type) value of the skiing feature.
+    piste_difficulty: The OSM [`piste:difficulty`](http://wiki.openstreetmap.org/wiki/Key:piste:difficulty) value of the skiing feature.
+    piste_grooming: The OSM [`piste:grooming`](http://wiki.openstreetmap.org/wiki/Key:piste:grooming) value of the skiing feature.
+    piste_name: The OSM [`piste:name`](http://wiki.openstreetmap.org/wiki/Key:piste:name) value of the skiing feature.
+    man_made: The OSM [`man_made`](http://wiki.openstreetmap.org/wiki/Key:man_made) value of the skiing feature.
+  datasource:
+    geometry_field: geometry
+    srid: 900913
+schema:
+datasources:
+  - type: imposm3
+    mapping_file: ./mapping.yaml
