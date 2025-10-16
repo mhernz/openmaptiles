@@ -107,3 +107,5 @@ tables:
       boundary:
       - national_park
       - protected_area
+      landuse:
+      - military
