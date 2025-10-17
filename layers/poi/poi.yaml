@@ -87,7 +87,7 @@ layer:
         car:
           subclass: ['car', 'car_repair', 'car_parts', 'taxi']
         hospital:
-          subclass: ['hospital', 'nursing_home', 'clinic', 'aed', 'defibrillator']
+          subclass: ['hospital', 'nursing_home', 'clinic']
         cemetery:
           subclass: ['grave_yard', 'cemetery']
         attraction:
@@ -114,6 +114,10 @@ layer:
           subclass: ['spring', 'valley', 'cave_entrance', 'hot_spring', 'geyser', 'beach']
         boat:
           subclass: ['slipway', 'put_in', 'portage']
+        emergency:
+          - __AND__:
+              subclass: ['phone', 'aed', 'defibrillator']
+              mapping_key: 'emergency'
     subclass:
       description: |
           Original value of either the
