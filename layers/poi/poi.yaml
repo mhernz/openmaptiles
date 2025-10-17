@@ -57,7 +57,7 @@ layer:
         entrance:
           subclass: ['subway_entrance', 'train_station_entrance']
         campsite:
-          subclass: ['camp_site', 'caravan_site']
+          subclass: ['camp_site', 'caravan_site', 'bear_box', 'firepit']
         camp_pitch:
           subclass: ['camp_pitch']
         laundry:
@@ -87,7 +87,7 @@ layer:
         car:
           subclass: ['car', 'car_repair', 'car_parts', 'taxi']
         hospital:
-          subclass: ['hospital', 'nursing_home', 'clinic']
+          subclass: ['hospital', 'nursing_home', 'clinic', 'aed', 'defibrillator']
         cemetery:
           subclass: ['grave_yard', 'cemetery']
         attraction:
@@ -111,7 +111,9 @@ layer:
         fuel:
           subclass: ['fuel', 'charging_station']
         natural:
-          subclass: ['spring', 'valley', 'cave_entrance', 'hot_spring', 'geyser']
+          subclass: ['spring', 'valley', 'cave_entrance', 'hot_spring', 'geyser', 'beach']
+        boat:
+          subclass: ['slipway', 'put_in', 'portage']
     subclass:
       description: |
           Original value of either the

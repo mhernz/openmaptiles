@@ -65,6 +65,11 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - university
   - veterinary
   - waste_basket
+  - bear_box
+  - bench
+  - water_point
+  - sanitary_dump_station
+  - waste_disposal
 
 # barrier values , see http://taginfo.openstreetmap.org/keys/barrier#values
 def_poi_mapping_barrier: &poi_mapping_barrier
@@ -119,6 +124,9 @@ def_poi_mapping_leisure: &poi_mapping_leisure
   - swimming_area
   - swimming_pool
   - water_park
+  - bird_hide
+  - slipway
+  - firepit
 
 # office values , see http://taginfo.openstreetmap.org/keys/office#values
 def_poi_mapping_office: &poi_mapping_office
@@ -395,6 +403,15 @@ def_poi_mapping_natural: &poi_mapping_natural
   - cave_entrance
   - hot_spring
   - geyser
+  - beach
+
+def_poi_mapping_emergency: &poi_mapping_emergency
+  - aed
+  - defibrillator
+
+def_poi_mapping_canoe: &poi_mapping_canoe
+  - put_in
+  - portage
 
 def_poi_fields: &poi_fields
   - name: osm_id
@@ -466,6 +483,15 @@ def_poi_fields: &poi_fields
   - name: natural
     key: natural
     type: string
+  - name: emergency
+    key: emergency
+    type: string
+  - name: canoe
+    key: canoe
+    type: string
+  - name: toilets_disposal
+    key: toilets:disposal
+    type: string
 
 def_poi_mapping: &poi_mapping
   aerialway: *poi_mapping_aerialway
@@ -483,6 +509,8 @@ def_poi_mapping: &poi_mapping
   tourism: *poi_mapping_tourism
   waterway: *poi_mapping_waterway
   natural: *poi_mapping_natural
+  emergency: *poi_mapping_emergency
+  canoe: *poi_mapping_canoe
   man_made:
     - lighthouse
   'tower:type':
