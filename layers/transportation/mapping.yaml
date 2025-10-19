@@ -261,6 +261,9 @@ tables:
     - *informal
     - *surface
     - *expressway
+    - name: smoothness
+      key: smoothness
+      type: string
     mapping:
       highway:
       - motorway

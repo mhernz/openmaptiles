@@ -210,6 +210,9 @@ layer:
       values:
       - paved
       - unpaved
+    smoothness:
+      description: |
+          Original value of the of [`smoothness`](https://wiki.openstreetmap.org/wiki/Key:smoothness) tag (highways only).
   datasource:
     geometry_field: geometry
     srid: 900913
